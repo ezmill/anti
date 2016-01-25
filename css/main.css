@@ -83,7 +83,6 @@ a {
     justify-content: center;
     -webkit-align-items: center;
     align-items: center;
-    background: #ff0000;
 
 }
 .song{
@@ -129,13 +128,13 @@ a {
     justify-content: center;
     -webkit-align-items: center;
     align-items: center;
-    background: #ff0000 url(../img/LOGO.svg) no-repeat;
+    background: url(../img/LOGO.svg) no-repeat;
     background-position: center center;
     /*background-size: 50%;*/
 }
 #store p{
     font-size: 300%;
-    color: white;
+    color: #ff0000;
     text-align: center;
 }
 #rodeo{
