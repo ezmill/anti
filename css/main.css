@@ -1,5 +1,5 @@
 *{
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 @font-face {
     font-family: 'Containment';
@@ -15,9 +15,9 @@
 }
 
 body{
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     font-family: "Nimbus Sans"; 
     background: white;
     width: 100%;
@@ -50,13 +50,20 @@ a {
     height: auto;
     margin: 0 auto;
     display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-flex-direction: row;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     /*-webkit-align-items: center;*/
     /*align-items: center;*/
     -webkit-justify-content: center;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     white-space: nowrap; 
     padding: 0 100px 100px 100px;
 
@@ -65,7 +72,11 @@ a {
     /*margin: 0 5vw;*/
     width: auto;
     /*text-align: center;*/
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 .col-item{
     /*align-items: stretch;*/
@@ -76,13 +87,22 @@ a {
     width: 100vw;
     height: 100vh;
     display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-flex-direction: column;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-justify-content: center;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-align-items: center;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
 }
 .song{
@@ -93,13 +113,22 @@ a {
     width: 100vw;
     height: 100vh;
     display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-flex-direction: row;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-justify-content: center;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-align-items: center;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
 }
 .action-figure{
@@ -121,13 +150,22 @@ a {
     width: 100vw;
     height: 100vh;
     display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-flex-direction: row;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-justify-content: center;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-align-items: center;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background: url(../img/LOGO.svg) no-repeat;
     background-position: center center;
     /*background-size: 50%;*/
@@ -141,13 +179,22 @@ a {
     width: 100vw;
     height: 100vh;
     display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-flex-direction: row;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-justify-content: center;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-align-items: center;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background: url(../img/rodeoart.jpg) no-repeat;
     background-position: center center;
     background-size: cover;
@@ -161,13 +208,22 @@ a {
     width: 100vw;
     height: auto;
     display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-flex-direction: row;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-justify-content: center;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-align-items: center;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 #socials{
     margin: 25px 0;
@@ -185,9 +241,11 @@ a {
         max-width: 55vw;
     }
     .action-figure:nth-child(2){
-        display: none;
+        /*display: none;*/
     }
     .mobile-action-figure-order{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         display: -webkit-flex;
     }
