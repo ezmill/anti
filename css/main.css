@@ -65,7 +65,6 @@ a {
         -ms-flex-pack: center;
             justify-content: center;
     white-space: nowrap; 
-    padding: 0 100px 100px 100px;
 
 }
 .column{
@@ -238,7 +237,7 @@ a {
         font-size: 70%;
     }
     .action-figure img{
-        max-width: 55vw;
+        /*max-width: 55vw;*/
     }
     .action-figure:nth-child(2){
         /*display: none;*/
