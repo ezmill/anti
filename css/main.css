@@ -167,7 +167,7 @@ a {
             align-items: center;
     background: url(../img/LOGO.svg) no-repeat;
     background-position: center center;
-    /*background-size: 50%;*/
+    background-size: 50%;
 }
 #store p{
     font-size: 300%;
