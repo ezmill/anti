@@ -152,12 +152,12 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-flex-direction: row;
+    -webkit-flex-direction: column;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-justify-content: center;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: ;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -165,13 +165,35 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background: url(../img/LOGO.svg) no-repeat;
-    background-position: center center;
+            position: relative;
+    /*background: url(../img/LOGO.svg) no-repeat;*/
+/*    background-position: center center;
     background-size: 50%;
+    background-color: whitesmoke;
+    -webkit-mask-image: url(../img/LOGO.svg);
+    mask-image: url(../img/LOGO.svg);*/
+}
+#store .logo{
+    background-position: center center;
+    background-size: 100%;
+    background-color: whitesmoke;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 50%;
+    -webkit-mask-image: url(../img/LOGO.svg);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center center;
+
+    mask-image: url(../img/LOGO.svg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 #store p{
     font-size: 300%;
     color: #ff0000;
+    z-index: 1;
     text-align: center;
 }
 #rodeo{
